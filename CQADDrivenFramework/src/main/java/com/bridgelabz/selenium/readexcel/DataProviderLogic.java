@@ -5,7 +5,7 @@ import org.testng.annotations.DataProvider;
 public class DataProviderLogic {
     @DataProvider(name = "testData")
     public Object[][] getData(){
-        ReadExcelData readExcelData = new ReadExcelData("C:\\Users\\Shree\\Downloads\\CQADDrivenFramework\\src\\main\\resources\\LoginDataLinkedin.xlsx");
+        ReadExcelData readExcelData = new ReadExcelData("C:\\Users\\Shree\\Desktop\\Bridgelabz Testing Assignment\\LinkedIn_DataDrivenFramework_Log4j_AllureReports\\CQADDrivenFramework\\src\\main\\resources\\LoginDataLinkedin.xlsx");
         int rows = readExcelData.getRowCount(0);
 
         Object[][] credentials = new Object[rows][2];
